@@ -1,0 +1,77 @@
+/* Asegúrate de que el header y el footer ocupen todo el ancho */
+header, footer {
+    width: 100%; /* Asegura que ocupen todo el ancho de la página */
+    padding: 10px 0; /* Ajuste de padding */
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el contenido */
+    box-sizing: border-box; /* Evita que el padding afecte el ancho */
+}
+
+/* Evita el flotado para header y footer */
+header, footer {
+    float: none; /* Desactiva cualquier flotado */
+    clear: both; /* Asegura que no se superpongan con otros elementos */
+}
+
+/* Si quieres añadir algo de espacio alrededor del formulario de login */
+.container {
+    margin-top: 50px; /* Espacio superior para evitar que se solapen */
+    margin-bottom: 50px; /* Espacio inferior */
+    max-width: 500px; /* Limitar el ancho máximo */
+    margin-left: auto;
+    margin-right: auto; /* Centrado horizontal */
+    background-color: #0245e2; /* Fondo azul oscuro para el contenedor */
+    padding: 20px; /* Añadir padding para que el contenido no esté pegado a los bordes */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras sutiles para el efecto de profundidad */
+}
+
+/* Asegúrate de que el formulario de login también se vea bien */
+.login-form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Si se necesita que el footer siempre esté en la parte inferior */
+footer {
+    padding: 20px 0; /* Espaciado adecuado */
+    background-color: #333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el contenido */
+    box-sizing: border-box; /* Evita que el padding afecte el ancho total */
+    position: relative; /* Evita que flote fuera de la página */
+    bottom: 0; /* Asegura que esté en la parte inferior si es necesario */
+    margin-top: 20px; /* Espacio entre el formulario y el footer */
+}
+
+/* Asegura que el body ocupe toda la altura de la ventana */
+body {
+    min-height: 100vh; /* Asegura que el contenido ocupe toda la pantalla */
+    display: flex;
+    flex-direction: column; /* Disposición en columna para header, contenido y footer */
+}
+
+.container {
+    flex-grow: 1; /* Asegura que el formulario se expanda para llenar el espacio disponible */
+}
+
+/* Botones */
+button.btn {
+    background-color: #0045e7; /* Fondo azul oscuro para el botón */
+    color: white; /* Texto blanco en el botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 12px 20px; /* Espaciado dentro del botón */
+    cursor: pointer; /* Cambio de cursor al pasar sobre el botón */
+    width: 100%; /* Asegura que el botón ocupe todo el ancho */
+    font-size: 16px; /* Ajuste de tamaño de texto */
+}
+
+button.btn:hover {
+    background-color: #333; /* Cambio de color al pasar el cursor sobre el botón */
+    transition: background-color 0.3s ease-in-out; /* Efecto suave de transición */
+}
